@@ -34,7 +34,7 @@ class ZapatosSeeder extends Seeder
         $zapato->color = "Blanco";
         $zapato->precio = 79.99;
         $zapato->stock = 20;
-        $zapato->imagen = "https://bantolin.nyc3.digitaloceanspaces.com/Zapatos/calzado-air-max-excee-psfV5R.png";
+        $zapato->imagen = "https://bantolin.nyc3.digitaloceanspaces.com/Zapatos/FZ6085.png";
         $zapato->save();
 
         $zapato = new Zapato();
@@ -86,15 +86,15 @@ class ZapatosSeeder extends Seeder
         $zapato->save();
 
         $zapato = new Zapato();
-        $zapato->marca = "Vans";
-        $zapato->modelo = "Old Skoo";
-        $zapato->tipoZapato = "Skate";
-        $zapato->Talla = "41";
-        $zapato->estilo = "Retro";
-        $zapato->color = "Rojo";
-        $zapato->precio = 64.99;
+        $zapato->marca = "Timberland";
+        $zapato->modelo = "6-Inch Premium Boo";
+        $zapato->tipoZapato = "Bota";
+        $zapato->Talla = "45";
+        $zapato->estilo = "Outdoor";
+        $zapato->color = "Negro";
+        $zapato->precio = 149.99;
         $zapato->stock = 20;
-        $zapato->imagen = "https://bantolin.nyc3.digitaloceanspaces.com/Zapatos/VN0A5JMJY52.png";
+        $zapato->imagen = "https://bantolin.nyc3.digitaloceanspaces.com/Zapatos/timberland-heritage-6-in-boot-botas-599_320x.png";
         $zapato->save();
 
         $zapato = new Zapato();
