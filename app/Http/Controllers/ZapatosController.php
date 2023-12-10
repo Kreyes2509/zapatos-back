@@ -38,7 +38,9 @@ class ZapatosController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $shoes = new Zapato();
+
+        return response()->json($shoes->getShoe($id));
     }
 
     /**
