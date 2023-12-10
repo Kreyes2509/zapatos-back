@@ -130,7 +130,7 @@ class ZapatosSeeder extends Seeder
         $zapato->color = "Azul Marino";
         $zapato->precio = 74.99;
         $zapato->stock = 20;
-        $zapato->imagen = "https://bantolin.nyc3.digitaloceanspaces.com/Zapatos/cut-paste-photos2022_03_17_06_31_10.png";
+        $zapato->imagen = "https://bantolin.nyc3.digitaloceanspaces.com/Zapatos/fila.png";
         $zapato->save();
     }
 }
