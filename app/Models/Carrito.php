@@ -23,7 +23,7 @@ class Carrito extends Model
     {
         return $this->select(
             "carrito.*","zapatos.marca","zapatos.modelo","zapatos.id as zapatoID"
-        )->join("zapatos", "zapatos.id","=","carrito.id")->where("userID","=",$userID)->get();
+        )->join("zapatos", "zapatos.id","=","carrito.zapatosID")->where("userID","=",$userID)->get();
     }
 
     public function storeProduct($shoeID)
