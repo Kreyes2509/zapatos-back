@@ -22,7 +22,7 @@ class Carrito extends Model
     public function getShoppingCar($userID)
     {
         return $this->select(
-            "carrito.*","zapatos.marca","zapatos.modelo","zapatos.id as zapatoID"
+            "carrito.*","zapatos.marca","zapatos.modelo","zapatos.id as zapatoID","zapatos.imagen"
         )->join("zapatos", "zapatos.id","=","carrito.zapatosID")->where("userID","=",$userID)->get();
     }
 
