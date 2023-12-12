@@ -48,12 +48,8 @@ class DetalleVentaController extends Controller
     {
         $DV = DetalleVenta::find($userID);
         $DV->delete();
-        $carrito = Carrito::find($userID);
+        Carrito::truncate();
 
-        foreach($carrito as $Car)
-        {
-            $Car->delete();
-        }
         return response()->json([
             'status'=>200,
             'message'=>"delete"
