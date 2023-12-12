@@ -46,8 +46,7 @@ class DetalleVentaController extends Controller
 
     public function destroy($userID)
     {
-        $DV = DetalleVenta::find(1);
-        $DV->delete();
+        DetalleVenta::truncate();
         Carrito::truncate();
 
         return response()->json([
