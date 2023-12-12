@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('detalle_venta', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('userID');
-            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('userID')->references('id')->on('users');
             $table->date("fechaEnvio");
             $table->date("fechaLLegada");
             $table->decimal("total");
